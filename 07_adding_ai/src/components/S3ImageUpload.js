@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Storage } from 'aws-amplify';
+import { Storage, Auth } from 'aws-amplify';
 import { v4 as uuid} from 'uuid';
 import { Form } from 'semantic-ui-react';
 export default class S3ImageUpload extends Component {
@@ -10,12 +10,13 @@ export default class S3ImageUpload extends Component {
     
     uploadFile = async (file) => {
         const fileName = uuid();
+        const user = await Auth.currentAuthenticatedUser();
         const result = await Storage.put(
             fileName, 
             file, 
             {
             customPrefix: { public: 'uploads/' },
-            metadata: { albumid: this.props.albumId }
+            metadata: { albumid: this.props.albumId, owner: user.username }
             }
         );
         console.log('Uploaded file: ', result);
