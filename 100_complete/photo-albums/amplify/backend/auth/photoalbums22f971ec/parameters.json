@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "photoalbums22f971ec_identitypool_22f971ec",
+    "allowUnauthenticatedIdentities": true,
+    "lambdaLogPolicy": "photoa_22f971ec_lambda_log_policy",
+    "openIdLambdaRoleName": "photoa_22f971ec_openid_lambda_role",
+    "openIdRolePolicy": "photoa_22f971ec_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "photoa_22f971ec_openid_lambda_iam_policy",
+    "openIdLogPolicy": "photoa_22f971ec_openid_lambda_log_policy",
+    "userPoolName": "photoalbums22f971ec_userpool_22f971ec",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "photoa22f971ec_sns-role",
+    "roleExternalId": "photoa22f971ec_role_external_id",
+    "policyName": "photoa22f971ec-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "photoa22f971ec_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "photoa22f971ec_totp_lambda_role",
+    "mfaLambdaLogPolicy": "photoa22f971ec_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "photoa22f971ec_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "photoa22f971ec_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "photoa22f971ec_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "photoa22f971ec_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "photoa22f971ec_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "photoalbums22f971ec",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}
