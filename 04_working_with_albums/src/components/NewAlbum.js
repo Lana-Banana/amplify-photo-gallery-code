@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { API, graphqlOperation } from 'aws-amplify';
-import { Header, Input, Segment } from 'semantic-ui-react';
+import React, { Component } from './node_modules/react';
+import { API, graphqlOperation } from './node_modules/aws-amplify';
+import { Header, Input, Segment } from './node_modules/semantic-ui-react';
 export default class NewAlbum extends Component {
   constructor(props) {
     super(props);

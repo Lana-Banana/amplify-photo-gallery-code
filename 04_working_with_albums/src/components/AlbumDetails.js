@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Segment, Header } from 'semantic-ui-react';
+import React, { Component } from './node_modules/react';
+import { Segment, Header } from './node_modules/semantic-ui-react';
 
 export default class AlbumDetails extends Component {
     render() {

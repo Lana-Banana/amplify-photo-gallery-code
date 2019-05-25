@@ -1,11 +1,11 @@
 /* eslint-disable import/first */
 // src/App.js
 
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
-import { Grid } from 'semantic-ui-react';
-import { withAuthenticator } from 'aws-amplify-react';
-import Amplify from 'aws-amplify';
+import React, { Component } from './node_modules/react';
+import { BrowserRouter as Router, Route, NavLink } from './node_modules/react-router-dom';
+import { Grid } from './node_modules/semantic-ui-react';
+import { withAuthenticator } from './node_modules/aws-amplify-react';
+import Amplify from './node_modules/aws-amplify';
 import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
 

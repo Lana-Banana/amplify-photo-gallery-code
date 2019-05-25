@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Connect } from 'aws-amplify-react';
-import { graphqlOperation } from 'aws-amplify';
+import React, { Component } from './node_modules/react';
+import { Connect } from './node_modules/aws-amplify-react';
+import { graphqlOperation } from './node_modules/aws-amplify';
 import { GetAlbum } from './graphql';
 import AlbumDetails from './AlbumDetails';
 

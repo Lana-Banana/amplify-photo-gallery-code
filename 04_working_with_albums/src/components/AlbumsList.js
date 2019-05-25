@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Header, List, Segment } from 'semantic-ui-react';
-import { NavLink } from 'react-router-dom';
+import React, { Component } from './node_modules/react';
+import { Header, List, Segment } from './node_modules/semantic-ui-react';
+import { NavLink } from './node_modules/react-router-dom';
 
 export default class AlbumsList extends Component {  
     albumItems() {

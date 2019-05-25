@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { graphqlOperation } from 'aws-amplify';
-import { Connect } from 'aws-amplify-react';
+import React, { Component } from './node_modules/react';
+import { graphqlOperation } from './node_modules/aws-amplify';
+import { Connect } from './node_modules/aws-amplify-react';
 import { ListAlbums, SubscribeToNewAlbums } from './graphql';
 import AlbumsList from './AlbumsList';
 
